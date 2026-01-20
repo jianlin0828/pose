@@ -16,12 +16,14 @@
 
 本專案使用 Conda 進行環境管理，並提供完整的環境設定檔 `environment.yml`。
 
+
 1. **複製專案**
    ```bash
    git clone [https://github.com/jianlin0828/pose.git](https://github.com/jianlin0828/pose.git)
    cd pose
+   ```
 
-```
+
 
 2. **建立虛擬環境**
 使用 `environment.yml` 還原執行環境：
@@ -37,6 +39,7 @@ conda env create -f environment.yml
 conda activate <env_name>
 
 ```
+
 
 
 
