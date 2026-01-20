@@ -1,7 +1,7 @@
 
 # Pose Classification Evaluation Tool
 
-A robust pose classification evaluation framework based on MediaPipe Pose and EfficientNet (Head Model). This project is designed to address common failures in monocular 2D pose estimation, such as Z-axis collapse and mirror ambiguity, by implementing a hierarchical logic correction strategy named "V-Final-Plus-Plus".
+A robust pose classification evaluation framework based on MediaPipe Pose and SemiUHPE (Head Model). This project is designed to address common failures in monocular 2D pose estimation, such as Z-axis collapse and mirror ambiguity, by implementing a hierarchical logic correction strategy .
 
 ## Workflow
 
@@ -12,10 +12,10 @@ The inference pipeline consists of three main stages:
 
 2.  **Pose Estimation**:
     - **Body**: MediaPipe Pose extracts body landmarks (Yaw/Roll).
-    - **Head**: EfficientNet-V2 predicts head angles (Yaw/Pitch/Roll).
+    - **Head**: SemiUHPE predicts head angles (Yaw/Pitch/Roll).
 
 3.  **Logic Correction & Classification**:
-    The raw angles are processed through the "V-Final-Plus-Plus" algorithm. This stage applies heuristic rules (e.g., Smart Sign Correction, Back-View Thresholding) to correct geometric inconsistencies before outputting the final prediction.
+    The raw angles are processed through the algorithm. This stage applies heuristic rules (e.g., Smart Sign Correction, Back-View Thresholding) to correct geometric inconsistencies before outputting the final prediction.
 
 ## Installation
 
