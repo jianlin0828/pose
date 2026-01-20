@@ -1,7 +1,4 @@
 
-```markdown
-# Pose Classification Evaluation Tool based on MediaPipe
-```
 這是一個基於 **MediaPipe Pose** 與 **EfficientNet (Head Model)** 的姿態分類評估工具。
 專為解決單鏡頭 2D 姿態估計中常見的 **Z 軸深度崩潰 (Z-axis Collapse)** 與 **鏡像誤判 (Mirror Effect)** 問題而設計。本專案引入了「V-Final-Plus-Plus」多層級邏輯修正策略，在不重新訓練姿態模型的前提下，突破物理限制，實現高準確率的姿態分類。
 
@@ -116,6 +113,3 @@ python eval_pose_v2.py \
 3. **早期傾斜保護**：在進入主判定前攔截 Yaw < 40° 的傾斜動作。
 4. **非對稱主導權**：針對左側數據壓縮問題，給予較低的判定門檻 (左6° vs 右20°)。
 
----
-
-```
