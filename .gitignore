@@ -1,0 +1,30 @@
+# 1. 排除 Python 編譯暫存檔 (垃圾檔)
+__pycache__/
+*.pyc
+
+# 2. 排除輸出結果與測試圖片 (重要！避免上傳大量圖片)
+output/
+debug_images/
+my_results/
+classify/
+classify_v2/
+csv/
+materials/
+# 如果你的輸入圖片放在專案內，記得排除它，例如：
+data/
+test_images/
+
+# 3. 排除模型權重檔 (如果 >100MB 絕對要排除)
+checkpoints/
+*.pth
+*.pt
+
+# 4. 排除 IDE 設定檔
+.vscode/
+.idea/
+.DS_Store
+
+# 5. 排除虛擬環境 (如果有建在裡面的話)
+env/
+venv/
+.env
