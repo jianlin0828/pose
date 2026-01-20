@@ -89,5 +89,3 @@ The script generates a CSV file (`pose_classification_v_final.csv`) with the fol
 * `gt_pose`: Ground Truth class derived from the prompt.
 * `prediction`: Final predicted class.
 * `Raw_Angles`: Detailed angle outputs (Body/Head Yaw, Pitch, Roll).
-
-```
