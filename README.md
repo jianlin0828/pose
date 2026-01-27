@@ -1,3 +1,31 @@
+# Latest Update (v3.0): ML Integration Guide
+For Integration Team: We have moved from a manual rule-based logic to a Machine Learning (Decision Tree) approach for better stability and easier integration.
+
+1. What's New?
+New Script: eval_pose_ml.py (Replaces eval_pose_v2.py for production use).
+
+New Model: pose_classifier_mediapipe.pkl (Must be placed in the root directory).
+
+New Dependencies: scikit-learn, joblib.
+
+2. Quick Start (ML Mode)
+Please use this command for the latest best-performing logic:
+
+```Bash
+# First, install new dependencies
+pip install scikit-learn joblib
+
+# Run the new ML-based evaluation
+python eval_pose_ml.py \
+    --img-dir "data/test_images" \
+    --out-dir "output/result_ml" \
+    --checkpoint "checkpoints/DAD-WildHead-EffNetV2-S-best.pth" \
+    --ml-model "pose_classifier_mediapipe.pkl" \
+    --prompts-file "data/prompts.csv"
+```
+
+
+
 
 # Pose Classification Evaluation Tool
 
