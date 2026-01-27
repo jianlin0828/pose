@@ -3,11 +3,11 @@ For Integration Team: We have moved from a manual rule-based logic to a Machine 
 
 1. What's New?
 
-New Script: eval_pose_ml.py (Replaces eval_pose_v2.py for production use).
+    New Script: eval_pose_ml.py (Replaces eval_pose_v2.py for production use).
 
-New Model: pose_classifier_mediapipe.pkl (Must be placed in the root directory).
+    New Model: pose_classifier_mediapipe.pkl (Must be placed in the root directory).
 
-New Dependencies: scikit-learn, joblib.
+    New Dependencies: scikit-learn, joblib.
 
 2. Quick Start (ML Mode)
 Please use this command for the latest best-performing logic:
