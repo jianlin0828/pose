@@ -1,7 +1,7 @@
 # Latest Update (v3.0): ML Integration Guide
 For Integration Team: We have moved from a manual rule-based logic to a Machine Learning (Decision Tree) approach for better stability and easier integration.
 
-1. What's New?
+1. **What's New?**
 
     New Script: eval_pose_ml.py (Replaces eval_pose_v2.py for production use).
 
@@ -9,7 +9,7 @@ For Integration Team: We have moved from a manual rule-based logic to a Machine 
 
     New Dependencies: scikit-learn, joblib.
 
-2. Quick Start (ML Mode)
+2. **Quick Start (ML Mode)**
 Please use this command for the latest best-performing logic:
 
 ```Bash
