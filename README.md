@@ -2,6 +2,7 @@
 For Integration Team: We have moved from a manual rule-based logic to a Machine Learning (Decision Tree) approach for better stability and easier integration.
 
 1. What's New?
+
 New Script: eval_pose_ml.py (Replaces eval_pose_v2.py for production use).
 
 New Model: pose_classifier_mediapipe.pkl (Must be placed in the root directory).
@@ -23,8 +24,6 @@ python eval_pose_ml.py \
     --ml-model "pose_classifier_mediapipe.pkl" \
     --prompts-file "data/prompts.csv"
 ```
-
-
 
 
 # Pose Classification Evaluation Tool
